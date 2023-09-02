@@ -138,7 +138,7 @@ if __name__ == '__main__':
 
     audio_loader = get_default_audio_adapter()
 
-    port = 5000
+    port = os.getenv('PORT')
     host = '0.0.0.0'
 
     app.run(host=host, port=port, threaded=False)
